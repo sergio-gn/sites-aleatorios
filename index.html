@@ -1,2 +1,79 @@
-SITES INUTEIS
-<a href="">Clique aqui</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Link Selector</title>
+</head>
+<style>
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+}
+
+.mdc-button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.mdc-button--raised {
+    background-color: #6200ee;
+    color: #ffffff;
+}
+
+.mdc-button--raised:hover {
+    background-color: #3700b3;
+}
+
+/* Anchor styling */
+#random-link {
+    display: block;
+    margin-top: 20px;
+    color: #6200ee;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#random-link:hover {
+    text-decoration: underline;
+}
+
+  </style>
+<body>
+    <button id="random-link-button">Get Random Link</button>
+    <a id="random-link" href="#" target="_blank">Click here to visit a random link</a>
+
+    <script src="script.js"></script>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = [
+        'https://www.window-swap.com/',
+        'https://asoftmurmur.com/',
+        'https://piruleta.com.br/',
+        'https://zoomquilt.org/',
+    ];
+
+    const button = document.getElementById('random-link-button');
+    const anchor = document.getElementById('random-link');
+
+    button.addEventListener('click', () => {
+        const randomIndex = Math.floor(Math.random() * links.length);
+        const randomLink = links[randomIndex];
+        anchor.href = randomLink;
+        anchor.textContent = `Click here to visit ${randomLink}`;
+    });
+});
+
+</script>
+</html>
