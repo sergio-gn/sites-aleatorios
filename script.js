@@ -31,7 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
         'http://weavesilk.com/',
         'https://haxiomic.github.io/GPU-Fluid-Experiments/html5/?q=Medium',
         'https://www.neogeocity.com/',
-        'https://savethesounds.info/'
+        'https://savethesounds.info/',
+        'https://patatap.com/',
+        'https://neal.fun/deep-sea/',
+        'https://www.earthcam.com/',
+        'https://www.koalastothemax.com/',
+        'https://www.neogeocity.com/',
+        'https://isitchristmas.com/',
+        'https://hasthelargehadroncolliderdestroyedtheworldyet.com/',
+        'https://v1.windows93.net/',
         
     ];
 
