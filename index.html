@@ -3,79 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Link Selector</title>
+    <title>Sites Aleatórios pra você mandar pro seu amor</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    /* Importing Material Design Components CSS */
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/material-components-web/11.0.0/material-components-web.min.css');
-
-/* Basic Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-}
-
-.container {
-    text-align: center;
-}
-
-.mdc-button {
-    font-family: 'Roboto', sans-serif;
-    display: inline-block;
-    padding: 0 16px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.0892857em;
-    text-align: center;
-    text-decoration: none;
-    line-height: 36px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-}
-
-.mdc-button--raised {
-    background-color: #6200ee;
-    color: #ffffff;
-}
-
-.mdc-button--raised:hover {
-    background-color: #3700b3;
-}
-</style>
 <body>
     <div class="container">
-        <a id="random-link" href="#" class="mdc-button mdc-button--raised" target="_blank">Click here to visit a random link</a>
+        <a id="random-link" href="#" class="mdc-button mdc-button--raised" target="_blank">Ir para site Aleatório</a>
     </div>
-
     <script src="script.js"></script>
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const links = [
-        'https://www.window-swap.com/',
-        'https://asoftmurmur.com/',
-        'https://piruleta.com.br/',
-        'https://zoomquilt.org/',
-        'https://radio.garden/',
-        'https://pointerpointer.com/',
-        'https://thisissand.com/'
-    ];
-
-    const anchor = document.getElementById('random-link');
-    const randomIndex = Math.floor(Math.random() * links.length);
-    const randomLink = links[randomIndex];
-
-    anchor.href = randomLink;
-    anchor.textContent = `Ir para site Aleatório`;
-});
-</script>
 </html>
